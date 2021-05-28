@@ -1,6 +1,3 @@
-* Hi there 👋
-
-** my interests
 *** Open Source License Compliance
 - https://github.com/maxhbr/LDBcollector
 - https://github.com/maxhbr/yacp
