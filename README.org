@@ -1,1 +1,17 @@
 * Hi there 👋
+
+** my interests
+*** Open Source License Compliance
+- https://github.com/maxhbr/LDBcollector
+- https://github.com/maxhbr/yacp
+- https://github.com/maxhbr/stats-on-cd-cd
+*** NixOS
+- my dotfiles: https://github.com/maxhbr/myconfig
+- my wallpapers: https://github.com/maxhbr/wallpapers
+*** Haskell
+- my scripting to align and stack macros: https://github.com/maxhbr/myphoto
+*** Embedded
+- my zephyr stuff: https://github.com/maxhbr/my-zephyr-workspace
+*** Photograpy
+- my homepage: https://github.com/maxhbr/maximilian-huber.de
+  - https://maximilian-huber.de
