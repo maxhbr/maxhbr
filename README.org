@@ -8,6 +8,7 @@
 *** Haskell
 - my scripting to align and stack macros: https://github.com/maxhbr/myphoto
 *** Embedded
+- a template for starting zephyr projects: https://github.com/maxhbr/zephyr-template
 - my zephyr stuff: https://github.com/maxhbr/my-zephyr-workspace
 *** Photograpy
 - my homepage: https://github.com/maxhbr/maximilian-huber.de
