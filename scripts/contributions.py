@@ -159,10 +159,13 @@ def plot(args) -> None:
         data = json.load(f)
     login = data["login"]
     days = [(date.fromisoformat(d["date"]), d["count"]) for d in data["days"]]
+    if not any(c for _, c in days):
+        sys.exit("error: no contributions in cache; run `fetch` first")
+    # drop leading years before the first contribution (fetch over-scans on purpose)
+    first_year = next(d.year for d, c in days if c)
+    days = [(d, c) for d, c in days if d.year >= first_year]
     dates = [d for d, _ in days]
     counts = [c for _, c in days]
-    if not dates:
-        sys.exit("error: no data in cache; run `fetch` first")
 
     window = 28
     smooth = [sum(counts[max(0, i - window + 1) : i + 1]) / window for i in range(len(counts))]

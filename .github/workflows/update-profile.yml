@@ -1,0 +1,54 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "27 4 * * *" # nightly at 04:27 UTC
+  workflow_dispatch: {} # allow manual runs
+  push:
+    paths:
+      - scripts/**
+      - .github/workflows/update-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      # The automatic token can read all public contribution/repo data.
+      # For private contributions, set a PAT secret named PROFILE_TOKEN.
+      GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+      LOGIN: ${{ github.repository_owner }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet matplotlib
+
+      - name: Regenerate contributions chart
+        run: python3 scripts/contributions.py all --login "$LOGIN"
+
+      - name: Regenerate repo-stars chart
+        run: python3 scripts/repo_stars.py all --login "$LOGIN"
+
+      - name: Commit updated stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A contributions.svg contributions.png contributions.json \
+                     repo-stars.svg repo-stars.png repo_stars.json
+          if git diff --quiet --staged; then
+            echo "no changes"
+          else
+            git commit -m "chore: refresh profile stats [skip ci]"
+            git push
+          fi
