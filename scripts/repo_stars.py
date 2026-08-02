@@ -52,7 +52,7 @@ query($login: String!, $name: String!, $cursor: String) {
 VIEWER_QUERY = "query { viewer { login } }"
 
 
-def api(token: str, query: str, variables: dict) -> dict:
+def api(token: str, query: str, variables: dict, tolerate: bool = False) -> dict:
     req = urllib.request.Request(
         API,
         data=json.dumps({"query": query, "variables": variables}).encode(),
@@ -70,6 +70,10 @@ def api(token: str, query: str, variables: dict) -> dict:
     except urllib.error.URLError as e:
         sys.exit(f"error: could not reach api.github.com: {e.reason}")
     if "errors" in payload:
+        # A token may lack permission for some fields (e.g. stargazers of other
+        # repos with the default Actions GITHUB_TOKEN). Keep partial data if we can.
+        if tolerate and payload.get("data") is not None:
+            return payload["data"]
         sys.exit(f"error: GitHub API: {json.dumps(payload['errors'], indent=2)[:800]}")
     return payload["data"]
 
@@ -88,16 +92,18 @@ def get_token(entry: str) -> str:
     return r.stdout.splitlines()[0].strip()
 
 
-def paginate(token, query, variables, path):
-    """Yield nodes/edges from a paginated connection reached via `path` (list of keys)."""
+def paginate(token, query, variables, path, tolerate=False):
+    """Yield nodes/edges from a paginated connection reached via `path` (list of keys).
+
+    Stops silently if the connection is missing/None (e.g. a forbidden field).
+    """
     cursor = None
     while True:
-        data = api(token, query, {**variables, "cursor": cursor})
-        conn = data
+        conn = api(token, query, {**variables, "cursor": cursor}, tolerate=tolerate)
         for key in path:
+            conn = conn.get(key) if isinstance(conn, dict) else None
             if conn is None:
                 return
-            conn = conn[key]
         yield from conn["nodes" if "nodes" in conn else "edges"]
         if not conn["pageInfo"]["hasNextPage"]:
             return
@@ -114,14 +120,24 @@ def fetch(args) -> None:
     repos = list(paginate(token, REPOS_QUERY, {"login": login}, ["user", "repositories"]))
 
     out = []
+    missing_history = 0
     for r in repos:
         name, stars = r["name"], r["stargazerCount"]
         starred = []
         if stars:
             print(f"  {name}: {stars} stars ...")
             starred = [e["starredAt"] for e in
-                       paginate(token, STARGAZERS_QUERY, {"login": login, "name": name}, ["repository", "stargazers"])]
+                       paginate(token, STARGAZERS_QUERY, {"login": login, "name": name},
+                                ["repository", "stargazers"], tolerate=True)]
+            if not starred:
+                missing_history += 1
         out.append({"name": name, "stars": stars, "url": r["url"], "starredAt": starred})
+
+    if missing_history:
+        print(f"note: star history was unavailable for {missing_history} repo(s). The default\n"
+              f"      Actions GITHUB_TOKEN cannot read other repos' stargazers; set a PAT\n"
+              f"      (e.g. the PROFILE_TOKEN secret) to populate the stars-over-time chart.",
+              file=sys.stderr)
 
     payload = {
         "login": login,
@@ -188,9 +204,14 @@ def plot(args) -> None:
         ax1.xaxis.set_major_locator(mdates.YearLocator())
         ax1.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
         ax1.set_xlim(xs[0], xs[-1])
-    ax1.set_ylabel("cumulative stars", fontsize=9)
-    ax1.set_ylim(bottom=0)
-    ax1.grid(axis="y", color="#e1e4e8", linewidth=0.8)
+        ax1.set_ylabel("cumulative stars", fontsize=9)
+        ax1.set_ylim(bottom=0)
+        ax1.grid(axis="y", color="#e1e4e8", linewidth=0.8)
+    else:
+        ax1.text(0.5, 0.5, "star history unavailable\n(run with a PAT to populate this chart)",
+                 ha="center", va="center", fontsize=11, color="#8b949e", transform=ax1.transAxes)
+        ax1.set_xticks([])
+        ax1.set_yticks([])
     ax1.spines[["top", "right"]].set_visible(False)
     ax1.tick_params(labelsize=9)
 
