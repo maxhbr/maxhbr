@@ -1,133 +1,42 @@
 {
  "login": "maxhbr",
- "fetchedAt": "2026-08-05T10:31:36+00:00",
+ "fetchedAt": "2026-08-06T07:15:33+00:00",
  "repos": [
   {
    "name": "myconfig",
    "stars": 41,
    "url": "https://github.com/maxhbr/myconfig",
-   "starredAt": [
-    "2015-02-03T13:11:16Z",
-    "2016-02-08T11:26:43Z",
-    "2016-08-02T10:15:20Z",
-    "2017-05-05T08:19:05Z",
-    "2017-11-13T16:14:04Z",
-    "2017-11-17T15:14:33Z",
-    "2018-07-24T13:53:14Z",
-    "2018-12-23T13:38:26Z",
-    "2019-05-05T20:46:12Z",
-    "2019-07-06T14:43:20Z",
-    "2019-08-18T20:00:05Z",
-    "2019-10-07T04:29:22Z",
-    "2019-12-06T20:39:57Z",
-    "2019-12-27T11:27:00Z",
-    "2020-04-04T09:02:16Z",
-    "2020-07-23T04:57:51Z",
-    "2020-07-23T06:57:35Z",
-    "2020-07-23T22:24:58Z",
-    "2020-11-23T23:38:03Z",
-    "2021-01-08T08:46:21Z",
-    "2021-08-06T13:30:34Z",
-    "2021-08-08T02:14:51Z",
-    "2023-04-05T07:46:34Z",
-    "2023-04-05T22:53:03Z",
-    "2023-07-07T12:16:01Z",
-    "2023-12-26T09:17:17Z",
-    "2024-01-26T11:03:47Z",
-    "2024-02-04T16:59:00Z",
-    "2024-03-29T04:43:57Z",
-    "2024-04-06T08:44:04Z",
-    "2024-04-23T14:11:11Z",
-    "2024-04-27T06:24:32Z",
-    "2024-05-01T18:49:54Z",
-    "2024-05-31T03:42:50Z",
-    "2024-10-04T18:56:47Z",
-    "2024-11-24T12:59:49Z",
-    "2025-02-07T08:59:31Z",
-    "2025-05-31T15:14:45Z",
-    "2025-07-08T08:41:35Z",
-    "2026-02-21T15:21:02Z",
-    "2026-04-14T21:39:34Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "LDBcollector",
    "stars": 32,
    "url": "https://github.com/maxhbr/LDBcollector",
-   "starredAt": [
-    "2019-07-04T08:42:51Z",
-    "2019-07-04T08:46:29Z",
-    "2019-07-04T10:54:41Z",
-    "2019-07-09T07:53:34Z",
-    "2019-07-09T07:53:40Z",
-    "2019-07-09T07:53:48Z",
-    "2019-07-09T07:54:41Z",
-    "2019-07-17T14:06:55Z",
-    "2019-08-10T20:01:26Z",
-    "2019-09-26T16:23:49Z",
-    "2019-09-27T00:34:55Z",
-    "2021-04-07T06:19:36Z",
-    "2021-04-10T14:06:19Z",
-    "2021-04-12T14:34:02Z",
-    "2021-05-12T09:31:13Z",
-    "2021-07-14T08:04:21Z",
-    "2021-09-19T20:04:58Z",
-    "2021-10-01T09:45:25Z",
-    "2021-10-06T11:01:59Z",
-    "2021-11-10T09:47:49Z",
-    "2021-11-12T15:48:29Z",
-    "2021-12-16T09:55:43Z",
-    "2023-03-15T12:24:34Z",
-    "2023-03-24T02:59:46Z",
-    "2023-06-04T05:45:14Z",
-    "2023-10-27T19:21:38Z",
-    "2023-12-14T09:29:14Z",
-    "2024-02-14T08:44:04Z",
-    "2024-02-29T16:58:17Z",
-    "2024-03-25T15:59:24Z",
-    "2025-05-14T16:19:04Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "LicenseScannerComparison",
    "stars": 7,
    "url": "https://github.com/maxhbr/LicenseScannerComparison",
-   "starredAt": [
-    "2019-06-11T07:45:26Z",
-    "2019-06-11T08:11:19Z",
-    "2019-09-26T01:04:05Z",
-    "2020-02-20T06:55:58Z",
-    "2020-04-02T14:47:00Z",
-    "2020-11-06T02:28:01Z",
-    "2021-05-31T08:33:40Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "maximilian-huber.de",
    "stars": 3,
    "url": "https://github.com/maxhbr/maximilian-huber.de",
-   "starredAt": [
-    "2014-07-15T17:05:13Z",
-    "2026-02-21T15:21:03Z",
-    "2026-03-09T10:07:57Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "spdx3ToGraph",
    "stars": 2,
    "url": "https://github.com/maxhbr/spdx3ToGraph",
-   "starredAt": [
-    "2024-09-06T14:30:36Z",
-    "2026-01-26T15:47:45Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "spdx-3-model-history",
    "stars": 2,
    "url": "https://github.com/maxhbr/spdx-3-model-history",
-   "starredAt": [
-    "2022-10-18T17:10:05Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "maxhbr",
@@ -138,89 +47,64 @@
    ]
   },
   {
-   "name": "octrc",
-   "stars": 2,
-   "url": "https://github.com/maxhbr/octrc",
-   "starredAt": []
-  },
-  {
    "name": "fossology-desktop-wrapper",
    "stars": 2,
    "url": "https://github.com/maxhbr/fossology-desktop-wrapper",
-   "starredAt": [
-    "2022-10-12T15:32:10Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "MasterThesis",
    "stars": 2,
    "url": "https://github.com/maxhbr/MasterThesis",
-   "starredAt": [
-    "2015-06-06T18:12:50Z",
-    "2015-07-17T20:24:23Z"
-   ]
-  },
-  {
-   "name": "friendly-succotash",
-   "stars": 1,
-   "url": "https://github.com/maxhbr/friendly-succotash",
    "starredAt": []
   },
   {
    "name": "make_build_analysis",
    "stars": 1,
    "url": "https://github.com/maxhbr/make_build_analysis",
-   "starredAt": [
-    "2024-04-01T08:30:58Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "magma-review-network",
    "stars": 1,
    "url": "https://github.com/maxhbr/magma-review-network",
-   "starredAt": [
-    "2022-09-01T15:52:30Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "packageurl-hs",
    "stars": 1,
    "url": "https://github.com/maxhbr/packageurl-hs",
-   "starredAt": [
-    "2021-10-18T06:54:04Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "my-zephyr-workspace",
    "stars": 1,
    "url": "https://github.com/maxhbr/my-zephyr-workspace",
-   "starredAt": [
-    "2021-08-01T10:05:46Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "rail",
    "stars": 1,
    "url": "https://github.com/maxhbr/rail",
-   "starredAt": [
-    "2019-09-21T16:32:54Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "stupid-fossology-curl-client",
    "stars": 1,
    "url": "https://github.com/maxhbr/stupid-fossology-curl-client",
-   "starredAt": [
-    "2019-03-13T15:20:00Z"
-   ]
+   "starredAt": []
   },
   {
    "name": "innovation",
    "stars": 1,
    "url": "https://github.com/maxhbr/innovation",
-   "starredAt": [
-    "2016-09-18T11:36:57Z"
-   ]
+   "starredAt": []
+  },
+  {
+   "name": "gvisor-agent-sandbox",
+   "stars": 0,
+   "url": "https://github.com/maxhbr/gvisor-agent-sandbox",
+   "starredAt": []
   },
   {
    "name": "provenant-nix-flake",
@@ -241,18 +125,6 @@
    "starredAt": []
   },
   {
-   "name": "tng.nix",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/tng.nix",
-   "starredAt": []
-  },
-  {
-   "name": "TALK_KernelSBOM",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/TALK_KernelSBOM",
-   "starredAt": []
-  },
-  {
    "name": "nix-flux2_dev_hf",
    "stars": 0,
    "url": "https://github.com/maxhbr/nix-flux2_dev_hf",
@@ -262,12 +134,6 @@
    "name": "myconfig.emacs",
    "stars": 0,
    "url": "https://github.com/maxhbr/myconfig.emacs",
-   "starredAt": []
-  },
-  {
-   "name": "MW-Cloud",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/MW-Cloud",
    "starredAt": []
   },
   {
@@ -286,18 +152,6 @@
    "name": "signal-export-docker",
    "stars": 0,
    "url": "https://github.com/maxhbr/signal-export-docker",
-   "starredAt": []
-  },
-  {
-   "name": "mybrain",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/mybrain",
-   "starredAt": []
-  },
-  {
-   "name": "btd24",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/btd24",
    "starredAt": []
   },
   {
@@ -349,12 +203,6 @@
    "starredAt": []
   },
   {
-   "name": "tsc",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/tsc",
-   "starredAt": []
-  },
-  {
    "name": "cc1352-flasher",
    "stars": 0,
    "url": "https://github.com/maxhbr/cc1352-flasher",
@@ -388,18 +236,6 @@
    "name": "zmk-config",
    "stars": 0,
    "url": "https://github.com/maxhbr/zmk-config",
-   "starredAt": []
-  },
-  {
-   "name": "zmk-config-of-a",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/zmk-config-of-a",
-   "starredAt": []
-  },
-  {
-   "name": "oss-compliance-training",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/oss-compliance-training",
    "starredAt": []
   },
   {
@@ -469,27 +305,9 @@
    "starredAt": []
   },
   {
-   "name": "magma-git-stats",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/magma-git-stats",
-   "starredAt": []
-  },
-  {
-   "name": "mlc",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/mlc",
-   "starredAt": []
-  },
-  {
    "name": "recursiveHashing",
    "stars": 0,
    "url": "https://github.com/maxhbr/recursiveHashing",
-   "starredAt": []
-  },
-  {
-   "name": "ort-bug-description",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/ort-bug-description",
    "starredAt": []
   },
   {
@@ -571,12 +389,6 @@
    "starredAt": []
   },
   {
-   "name": "fb-oss-insight",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/fb-oss-insight",
-   "starredAt": []
-  },
-  {
    "name": "rail-zephyr",
    "stars": 0,
    "url": "https://github.com/maxhbr/rail-zephyr",
@@ -589,51 +401,9 @@
    "starredAt": []
   },
   {
-   "name": "2020-Wohnungssuche",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/2020-Wohnungssuche",
-   "starredAt": []
-  },
-  {
-   "name": "greatsuccess-Docs",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/greatsuccess-Docs",
-   "starredAt": []
-  },
-  {
-   "name": "clearcode-toolkit",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/clearcode-toolkit",
-   "starredAt": []
-  },
-  {
    "name": "wallpapers",
    "stars": 0,
    "url": "https://github.com/maxhbr/wallpapers",
-   "starredAt": []
-  },
-  {
-   "name": "snippjet-impl",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/snippjet-impl",
-   "starredAt": []
-  },
-  {
-   "name": "priv-notes-on-snippjet",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/priv-notes-on-snippjet",
-   "starredAt": []
-  },
-  {
-   "name": "sw360-restScripts",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/sw360-restScripts",
-   "starredAt": []
-  },
-  {
-   "name": "autokauf2019",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/autokauf2019",
    "starredAt": []
   },
   {
@@ -649,75 +419,9 @@
    "starredAt": []
   },
   {
-   "name": "TNG-LDBcollector",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/TNG-LDBcollector",
-   "starredAt": []
-  },
-  {
-   "name": "swa-muc-vortrag",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/swa-muc-vortrag",
-   "starredAt": []
-  },
-  {
-   "name": "masterLicenseDB",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/masterLicenseDB",
-   "starredAt": []
-  },
-  {
-   "name": "scrapeTldrLegal",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/scrapeTldrLegal",
-   "starredAt": []
-  },
-  {
-   "name": "OSLS-Vortrag",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/OSLS-Vortrag",
-   "starredAt": []
-  },
-  {
-   "name": "foto-org",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/foto-org",
-   "starredAt": []
-  },
-  {
-   "name": "YokohamaSlides",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/YokohamaSlides",
-   "starredAt": []
-  },
-  {
    "name": "repoScan",
    "stars": 0,
    "url": "https://github.com/maxhbr/repoScan",
-   "starredAt": []
-  },
-  {
-   "name": "gueter",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/gueter",
-   "starredAt": []
-  },
-  {
-   "name": "spm_blender",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/spm_blender",
-   "starredAt": []
-  },
-  {
-   "name": "bsinno-sw360rest",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/bsinno-sw360rest",
-   "starredAt": []
-  },
-  {
-   "name": "bsinno-sync",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/bsinno-sync",
    "starredAt": []
   },
   {
@@ -733,57 +437,9 @@
    "starredAt": []
   },
   {
-   "name": "nixcon-organisation",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/nixcon-organisation",
-   "starredAt": []
-  },
-  {
    "name": "burgen",
    "stars": 0,
    "url": "https://github.com/maxhbr/burgen",
-   "starredAt": []
-  },
-  {
-   "name": "oce-fossology",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/oce-fossology",
-   "starredAt": []
-  },
-  {
-   "name": "sw360logo",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/sw360logo",
-   "starredAt": []
-  },
-  {
-   "name": "bsinno-ldapAdapterEXT",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/bsinno-ldapAdapterEXT",
-   "starredAt": []
-  },
-  {
-   "name": "bsinno-sw360-bdpimportservice",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/bsinno-sw360-bdpimportservice",
-   "starredAt": []
-  },
-  {
-   "name": "sw360epl",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/sw360epl",
-   "starredAt": []
-  },
-  {
-   "name": "sw360chore",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/sw360chore",
-   "starredAt": []
-  },
-  {
-   "name": "MuttConfig",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/MuttConfig",
    "starredAt": []
   },
   {
@@ -811,33 +467,15 @@
    "starredAt": []
   },
   {
-   "name": "quadrocopter",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/quadrocopter",
-   "starredAt": []
-  },
-  {
    "name": "BachelorThesis",
    "stars": 0,
    "url": "https://github.com/maxhbr/BachelorThesis",
    "starredAt": []
   },
   {
-   "name": "arduino",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/arduino",
-   "starredAt": []
-  },
-  {
    "name": "softwareProjekt",
    "stars": 0,
    "url": "https://github.com/maxhbr/softwareProjekt",
-   "starredAt": []
-  },
-  {
-   "name": "MOR",
-   "stars": 0,
-   "url": "https://github.com/maxhbr/MOR",
    "starredAt": []
   }
  ]
